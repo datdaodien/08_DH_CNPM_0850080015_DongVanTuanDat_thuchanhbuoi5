@@ -8,7 +8,7 @@ import '../../../size_config.dart';
 
 class PopularPlaces extends StatelessWidget {
   const PopularPlaces({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override

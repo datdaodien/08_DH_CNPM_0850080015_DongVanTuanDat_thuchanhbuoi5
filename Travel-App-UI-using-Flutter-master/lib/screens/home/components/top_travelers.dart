@@ -7,7 +7,7 @@ import '../../../size_config.dart';
 
 class TopTravelers extends StatelessWidget {
   const TopTravelers({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -47,9 +47,9 @@ class TopTravelers extends StatelessWidget {
 
 class UserCard extends StatelessWidget {
   const UserCard({
-    Key key,
-    @required this.user,
-    @required this.press,
+    Key? key,
+    required this.user,
+    required this.press,
   }) : super(key: key);
 
   final User user;

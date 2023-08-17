@@ -9,7 +9,7 @@ class Body extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     // You have to call SizeConfig on your starting page
-    SizeConfig().init(context);
+    SizeConfig.init(context);
     return SingleChildScrollView(
       clipBehavior: Clip.none,
       child: SafeArea(

@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:travel/components/place_card.dart';
-import 'package:travel/constants.dart';
 import 'package:travel/models/TravelSpot.dart';
 import 'package:travel/size_config.dart';
 
@@ -39,7 +38,7 @@ class Body extends StatelessWidget {
 
 class AddNewPlaceCard extends StatelessWidget {
   const AddNewPlaceCard({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -61,12 +60,7 @@ class AddNewPlaceCard extends StatelessWidget {
           SizedBox(
             height: getProportionateScreenWidth(53),
             width: getProportionateScreenWidth(53),
-            child: FlatButton(
-              padding: EdgeInsets.zero,
-              shape: RoundedRectangleBorder(
-                borderRadius: BorderRadius.circular(60),
-              ),
-              color: kPrimaryColor,
+            child: TextButton(
               onPressed: () {},
               child: Icon(
                 Icons.add,

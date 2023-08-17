@@ -2,7 +2,8 @@
     package="com.example.google_mao">
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION"/>
-   <application
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application
         android:label="google_mao"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
@@ -33,7 +34,7 @@
             android:name="flutterEmbedding"
             android:value="2" />
              <meta-data android:name="com.google.android.geo.API_KEY"
-               android:value="API_KEY"/>
+               android:value="AIzaSyDYhdyFGsrgM8eiQD0Vwzjw4C16Twp5_oI"/>
                
     </application>
 </manifest>

@@ -5,7 +5,7 @@ import 'search_fields.dart';
 
 class HomeHeader extends StatelessWidget {
   const HomeHeader({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
@@ -13,8 +13,7 @@ class HomeHeader extends StatelessWidget {
     return Padding(
       padding: EdgeInsets.only(bottom: getProportionateScreenWidth(25)),
       child: Stack(
-        overflow: Overflow.visible,
-        alignment: Alignment.center,
+        clipBehavior: Clip.none, alignment: Alignment.center,
         children: [
           Image.asset(
             "assets/images/home_bg.png",

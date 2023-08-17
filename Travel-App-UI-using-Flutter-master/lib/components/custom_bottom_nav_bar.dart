@@ -7,12 +7,12 @@ import '../size_config.dart';
 
 class CustomBottonNavBar extends StatelessWidget {
   const CustomBottonNavBar({
-    Key key,
+    Key? key,
   }) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
-    SizeConfig().init(context);
+    SizeConfig.init(context);
     return Container(
       color: Colors.white,
       child: SafeArea(
@@ -54,10 +54,10 @@ class CustomBottonNavBar extends StatelessWidget {
 
 class NavItem extends StatelessWidget {
   const NavItem({
-    Key key,
-    @required this.icon,
-    @required this.title,
-    @required this.press,
+    Key? key,
+    required this.icon,
+    required this.title,
+    required this.press,
     this.isActive = false,
   }) : super(key: key);
   final String icon, title;
@@ -81,6 +81,7 @@ class NavItem extends StatelessWidget {
           children: [
             SvgPicture.asset(
               icon,
+              // ignore: deprecated_member_use
               color: kTextColor,
               height: 28,
             ),

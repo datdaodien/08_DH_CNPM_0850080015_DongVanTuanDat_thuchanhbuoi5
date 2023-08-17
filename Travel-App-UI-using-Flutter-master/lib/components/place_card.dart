@@ -8,10 +8,10 @@ import '../size_config.dart';
 
 class PlaceCard extends StatelessWidget {
   const PlaceCard({
-    Key key,
-    @required this.travelSport,
+    Key? key,
+    required this.travelSport,
     this.isFullCard = false,
-    @required this.press,
+    required this.press,
   }) : super(key: key);
 
   final TravelSpot travelSport;
@@ -65,8 +65,8 @@ class PlaceCard extends StatelessWidget {
                     travelSport.date.day.toString(),
                     style: Theme.of(context)
                         .textTheme
-                        .headline4
-                        .copyWith(fontWeight: FontWeight.bold),
+                        .headlineMedium
+                        ?.copyWith(fontWeight: FontWeight.bold),
                   ),
                 if (isFullCard)
                   Text(
@@ -89,8 +89,8 @@ class PlaceCard extends StatelessWidget {
 
 class Travelers extends StatelessWidget {
   const Travelers({
-    Key key,
-    @required this.users,
+    Key? key,
+    required this.users,
   }) : super(key: key);
 
   final List<User> users;
